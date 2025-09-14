@@ -1,0 +1,41 @@
+.postsContainer {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.itemContainer {
+    max-width: 436px;
+    max-height: 259px;
+    padding: 14px;
+    display: grid;
+    justify-content: center;
+    gap: 12px;
+    list-style-type: none;
+    background-color: rgb(202 234 223 / 29%);
+    border-radius: 14px;
+}
+
+.itemContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.itemFooter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.itemBtn {
+    padding: 9px;
+    background-color: rgb(139, 209, 226);
+    border: none;
+    border-radius: 10px;
+}
+
+.itemBtn:hover {
+    cursor: pointer;
+}
