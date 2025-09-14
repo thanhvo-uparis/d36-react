@@ -39,3 +39,28 @@
 .itemBtn:hover {
     cursor: pointer;
 }
+
+// pagination
+.pagination {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.listPagination {
+    display: flex;
+    gap: 10px;
+    li {
+        padding: 8px;
+        border-radius: 3px;
+        color: #fff;
+        background-color: #333;
+        list-style-type: none;
+    }
+}
+
+.itemLink {
+    color: #fff;
+    text-decoration: none
+}
