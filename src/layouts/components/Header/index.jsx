@@ -34,7 +34,7 @@ function Header() {
                 
             </ul>
             <div className={styles.account}>
-                <button className={styles.signIn}>Sign In</button>
+                <button className={styles.signIn}>Login</button>
                 <button className={styles.signUp}>Sign Up</button>
                 <button className={styles.user}>User</button>
             </div>
