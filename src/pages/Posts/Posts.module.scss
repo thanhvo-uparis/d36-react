@@ -58,9 +58,16 @@
         background-color: #333;
         list-style-type: none;
     }
+    li:hover {
+        background-color: #918d8d;
+    }
 }
 
 .itemLink {
     color: #fff;
     text-decoration: none
+}
+
+.active {
+    background-color: aquamarine !important;
 }
