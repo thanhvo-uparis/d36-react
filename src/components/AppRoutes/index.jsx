@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { HashRouter, Routes, Route} from "react-router-dom";
 import Home from "../../pages/Home";
 import About from "../../pages/About";
 import Posts from "../../pages/Posts";
@@ -13,7 +13,7 @@ import Privacy from "../../pages/Privacy";
 
 function AppRoutes() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route element={ <DefaultLayout /> }>
                     <Route index element={<Home />}/>
@@ -28,7 +28,7 @@ function AppRoutes() {
                     <Route path="/register" element={<Register />}/>
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
