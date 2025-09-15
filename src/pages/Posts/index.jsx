@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useSearchParams } from "react-router-dom";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import styles from './Posts.module.scss';
 import Loading from "../../components/Loading";
 
@@ -9,6 +9,7 @@ function Posts() {
     const [totalPosts, setTotalPosts] = useState(0);
     const [searchParams, setSearchParams] = useSearchParams();
     const [page, setPage] = useState(+searchParams.get("page") || 1);
+    const navigate = useNavigate();
 
     const getSizePost = async () => {
         const res = await fetch("https://jsonplaceholder.typicode.com/posts");
@@ -73,7 +74,7 @@ function Posts() {
                             <p>{item.body}</p>
                         </div>
                         <div className={styles.itemFooter}>
-                            <button onClick={() => {}} className={styles.itemBtn}>Details</button>
+                            <button onClick={() => {navigate(`/post/${item.id}`)}} className={styles.itemBtn}>Details</button>
                         </div>
                     </li>
                 )
