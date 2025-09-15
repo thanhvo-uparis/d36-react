@@ -34,8 +34,8 @@ function Header() {
                 
             </ul>
             <div className={styles.account}>
-                <button className={styles.signIn}>Login</button>
-                <button className={styles.signUp}>Sign Up</button>
+                <button className={styles.signIn}><Link to="/login">Login</Link></button>
+                <button className={styles.signUp}><Link to="/register">Sign Up</Link></button>
                 <button className={styles.user}>User</button>
             </div>
         </div>
